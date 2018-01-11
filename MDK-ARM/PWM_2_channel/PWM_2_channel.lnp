@@ -1,0 +1,24 @@
+--cpu=Cortex-M4.fp
+"pwm_2_channel\stm32f4xx_hal_msp.o"
+"pwm_2_channel\stm32f4xx_it.o"
+"pwm_2_channel\main.o"
+"pwm_2_channel\stm32f4xx_hal_tim.o"
+"pwm_2_channel\stm32f4xx_hal_rcc.o"
+"pwm_2_channel\stm32f4xx_hal_gpio.o"
+"pwm_2_channel\stm32f4xx_hal_flash_ex.o"
+"pwm_2_channel\stm32f4xx_hal.o"
+"pwm_2_channel\stm32f4xx_hal_flash.o"
+"pwm_2_channel\stm32f4xx_hal_rcc_ex.o"
+"pwm_2_channel\stm32f4xx_hal_dma_ex.o"
+"pwm_2_channel\stm32f4xx_hal_cortex.o"
+"pwm_2_channel\stm32f4xx_hal_pwr.o"
+"pwm_2_channel\stm32f4xx_hal_pwr_ex.o"
+"pwm_2_channel\stm32f4xx_hal_flash_ramfunc.o"
+"pwm_2_channel\stm32f4xx_hal_tim_ex.o"
+"pwm_2_channel\stm32f4xx_hal_dma.o"
+"pwm_2_channel\startup_stm32f446xx.o"
+"pwm_2_channel\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "PWM_2_channel\PWM_2_channel.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_2_channel.map" -o PWM_2_channel\PWM_2_channel.axf
